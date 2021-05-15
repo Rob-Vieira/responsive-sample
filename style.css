@@ -1,0 +1,160 @@
+/* Fonts import
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap');
+
+/* Native Tags
+*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Utils
+*/
+.box{
+    width: 90%;
+    margin: auto;
+}
+
+/* btns */
+
+.btn{
+    display: block;
+
+    padding: 1rem;
+    text-transform: uppercase;
+
+    border-radius: 2rem;
+}
+
+.call-action{
+    background: #cc1ef9;
+    color: white;
+    border: 0.2rem solid #cc1ef9;
+}
+
+.btn-ghost{
+    color: #cc1ef9;
+    border: 0.2rem solid;
+}
+
+/* nav
+*/
+
+nav{
+    height: 6rem;
+}
+
+.nav-container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+/* logo */
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.logo span{
+    display: block;
+}
+
+.logo i{
+    display: block;
+    font-size: 3.0rem;
+    color: #cc1ef9;
+}
+
+/* nav-menu */
+
+.nav-menu a{
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+/* Showcase
+*/
+
+header{
+    height: calc(100vh - 6rem);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* showcase */
+
+.showcase{
+    justify-self: start;
+    align-self: center;
+    width: 80%;
+}
+
+.showcase p{
+    margin-top: 0.5rem;
+}
+
+.showcase .showcase-btns{
+    margin-top: 4rem;
+    display: flex;
+}
+
+.showcase .showcase-btns .btn:first-child{
+    margin-right: 1rem;
+}
+/* showcase-images */
+
+.showcase-images{
+    align-self: flex-end;
+}
+
+.showcase-images img{
+    width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+    html{
+        font-size: 60%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    header{
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+    }
+
+    .showcase{
+        justify-self: center;   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 366px){
+    .nav-container .nav-menu{
+        display: none;
+    }
+}
